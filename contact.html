@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>LE'STER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pages\contact\css\contact.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__logo"><a href="index.html"><img src="img\1header\logo-header.svg" alt="logo" class="header__logo__img"></a></div>
+                    <div class="burger"></div>
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li><a href="index.html" class="header__link">Главная</a></li>
+                            <li class="catalog-box">
+                                <a href="##" class="header__link dropdown">Каталог</a>
+                                <div class="dropdown__container">
+                                    <ul class="dropdown__list">
+                                        <li><a href="tv.html" class="dropdown__link">Кронштейны для телевизоров</a></li>
+                                        <li><a href="microwave.html" class="dropdown__link">Кронштейны для микроволновых печей</a></li>
+                                        <li><a href="accessories.html" class="dropdown__link">Аксессуары для крупной и мелкой бытовой техники</a></li>
+                                        <li><a href="сare-products.html" class="dropdown__link">Средства по уходу для крупной и
+                                            мелкой бытовой техники</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="about.html" class="header__link">О компании</a></li>
+                            <li><a href="contact.html" class="header__link">Контакты </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="contact">
+                <div class="container">
+                    <div class="contact__body">
+                        <div class="address">
+                            <div class="address__body">
+                                <div class="address__title">Наш адрес:</div>
+                                <div class="address__contacts item-address">
+                                    <a href="https://yandex.ru/maps/44/izhevsk/house/pushkinskaya_ulitsa_268/YUoYdAdpTUMHQFtsfXR3c39jYw==/?ll=53.209460%2C56.862308&z=16.63" class="item-address__link  item-address__map">г. Ижевск, ул. Пушкинская, 268</a>
+                                    <a href="mailto:info@lester-group.ru" class="item-address__link item-address__mail">info@lester-group.ru</a>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="geo">
+                            <div class="geo__body">
+                                <div class="geo__box-img">
+                                    <a href="https://yandex.ru/maps/44/izhevsk/house/pushkinskaya_ulitsa_268/YUoYdAdpTUMHQFtsfXR3c39jYw==/?ll=53.209460%2C56.862308&z=16.63"><img src="pages\contact\img\3geo\map.png" alt="map" class="img__geo"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="call">
+                <div class="container">
+                    <div class="call__body">
+                        <div class="call__text">
+                            Для получения индивидуальных условий - напишите о себе, что бы наши менеджеры связались с Вами в самые кратчайшие сроки.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="form" class="form">
+                <div class="container">
+                    <div class="form__body">
+                        <div class="form__container">
+                            <h2 class="form__title">Форма для заполнения перед началом сотрудничества</h2>
+                            <form action="##" id="form" name="form" class="form__box">
+                                <div class="input__box">
+                                    <input type="text" 
+                                    placeholder="Название организации"
+                                    id="company"  
+                                    name="company"  
+                                    data-reg="^[а-яА-ЯёЁa-zA-Z0-9]+$"
+                                    />
+                                </div>
+                                <div class="input__box">
+                                    <input type="text" 
+                                    placeholder="ИНН"
+                                    id="inn"  
+                                    name="inn"  
+                                    data-reg="^[1-9]+[0-9]*$"
+                                    />
+                                </div>
+                                <div class="input__box">
+                                    <input type="text" 
+                                    placeholder="Контактное лицо"
+                                    id="name"  
+                                    name="name"  
+                                    data-reg="^[а-яА-ЯёЁa-zA-Z]+ [а-яА-ЯёЁa-zA-Z]+ ?[а-яА-ЯёЁa-zA-Z]+$"
+                                    />
+                                </div>
+                                <div class="input__box">
+                                    <input type="text"
+                                    placeholder="E-mail" 
+                                    id="email" 
+                                    name="email" 
+                                    data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
+                                    />
+                                </div>
+                                <div class="input__box">
+                                    <input type="text" 
+                                    placeholder="Номер телефона"
+                                    id="phone" 
+                                    name="phone"
+                                    data-reg="^((\+7|7|8)+([0-9]){10})$"
+                                    />
+                                </div>
+                                <div class="form__button">
+                                    <input 
+                                    type="submit" 
+                                    value="Отправить" 
+                                    id="button" 
+                                    name="button"/>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__body">
+                        <div class="footer__row">
+                            <div class="footer__column">
+                                <div class="footer__item footer__item-left">
+                                    <div class="footer__item__label">Контакты</div>
+                                    <div class="footer__item__contact contacts-footer">
+                                        <a href="##" class="contacts-footer__link  contacts-footer__map">г. Ижевск, ул. Пушкинская, 268</a>
+                                        <a href="mailto:info@lester-group.ru" class="contacts-footer__link contacts-footer__mail">info@lester-group.ru</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__column">
+                                <div class="footer__item footer__item-right">
+                                    <div class="footer__item__logo"><a href="##"><img src="img\6footer\logo-footer.svg" alt="logo-footer" class="img-footer__logo"></a></div>
+                                    <div class="footer__item__sublogo">LE’STER<span class="text-r">®</span> 2022</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="pages\contact\js\formApp.js"></script>
+    <script src="js\script.js"></script>
+    <script src="js\dropdown.js"></script>
+</body>
+</html>
