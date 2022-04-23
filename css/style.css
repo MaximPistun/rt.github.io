@@ -20,17 +20,12 @@ html{
 }
 
 body{
-    background-color: #FFF;
-    color: #000;
+    background-color: #FFF !important;
+    color: #000 !important;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
-@media (prefers-color-scheme: dark) { 
-    body{
-        color: #000;
-        background-color: #FFF;
-    }
-}
+
 a,button, .burger{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);    /* убирает подсветку */
 }
